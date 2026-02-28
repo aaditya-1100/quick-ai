@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+@keyframes messageIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-message-in {
+  animation: messageIn 220ms ease-out;
+}
+
+.prose-glass code[class*="language-"],
+.prose-glass pre[class*="language-"] {
+  color: #e5e7eb;
+  background: transparent;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.prose-glass .token.comment,
+.prose-glass .token.prolog,
+.prose-glass .token.doctype,
+.prose-glass .token.cdata {
+  color: #94a3b8;
+}
+
+.prose-glass .token.punctuation {
+  color: #cbd5e1;
+}
+
+.prose-glass .token.property,
+.prose-glass .token.tag,
+.prose-glass .token.constant,
+.prose-glass .token.symbol,
+.prose-glass .token.deleted {
+  color: #fb7185;
+}
+
+.prose-glass .token.boolean,
+.prose-glass .token.number {
+  color: #fbbf24;
+}
+
+.prose-glass .token.selector,
+.prose-glass .token.attr-name,
+.prose-glass .token.string,
+.prose-glass .token.char,
+.prose-glass .token.builtin,
+.prose-glass .token.inserted {
+  color: #34d399;
+}
+
+.prose-glass .token.operator,
+.prose-glass .token.entity,
+.prose-glass .token.url,
+.prose-glass .language-css .token.string,
+.prose-glass .style .token.string {
+  color: #e2e8f0;
+}
+
+.prose-glass .token.atrule,
+.prose-glass .token.attr-value,
+.prose-glass .token.keyword {
+  color: #60a5fa;
+}
+
+.prose-glass .token.function,
+.prose-glass .token.class-name {
+  color: #a78bfa;
+}
